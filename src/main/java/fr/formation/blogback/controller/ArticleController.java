@@ -36,7 +36,7 @@ public class ArticleController {
 		return this.service.create(article);
 	}
 
-	@DeleteMapping
+	@DeleteMapping("/{id}")
 	@ResponseStatus(HttpStatus.NO_CONTENT)
 	public void delete(@PathVariable final Integer id) {
 		this.service.delete(id);
