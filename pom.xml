@@ -157,10 +157,10 @@
 			</activation>
 			<properties>
 				<env.db.driver>com.mysql.jdbc.Driver</env.db.driver>
-				<database.url>jdbc:mysql://eu-cdbr-west-01.cleardb.com/heroku_4294e5d49754758?reconnect=true</database.url>
+				<env.db.url>jdbc:mysql://eu-cdbr-west-01.cleardb.com/heroku_4294e5d49754758?reconnect=true</env.db.url>
 				<env.db.user>b1d67c7f1b8ef2</env.db.user>
 				<env.db.password>cfdaf543</env.db.password>
-				<database.dialect>org.hibernate.dialect.MySQL57Dialect</database.dialect>
+				<env.db.dialect>org.hibernate.dialect.MySQL57Dialect</env.db.dialect>
 			</properties>
 		</profile>
 	</profiles>
