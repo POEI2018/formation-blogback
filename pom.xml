@@ -144,7 +144,7 @@
 				<env.db.driver>com.mysql.jdbc.Driver</env.db.driver>
 				<env.db.url>jdbc:mysql://localhost:3306/blog?useSSL=false</env.db.url>
 				<env.db.user>root</env.db.user>
-				<env.db.password>root</env.db.password>
+				<env.db.password></env.db.password>
 				<env.db.dialect>org.hibernate.dialect.MySQL57Dialect</env.db.dialect>
 			</properties>
 		</profile>
