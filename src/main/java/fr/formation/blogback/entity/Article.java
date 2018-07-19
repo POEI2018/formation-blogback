@@ -6,6 +6,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import org.hibernate.validator.constraints.Length;
+
 @Entity
 public class Article {
 
@@ -17,7 +19,8 @@ public class Article {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 
-	@Column
+	@Column(nullable = false)
+	@Length(min = 6, max = 255, message = "Le titre doit comporter entre 6 et 255 caractères.")
 	private String title;
 
 	public String getDescription() {
